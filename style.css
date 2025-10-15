@@ -1,0 +1,93 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #f5f5f5;
+  --color-text: #1a1a1a;
+  --color-primary: #007aff;
+  --color-secondary: #ff9500;
+  --color-border: #e5e5e5;
+  --color-text-light: #555;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --transition: all 0.25s ease;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 3rem 4rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+}
+
+h1 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+#cronometro {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+button {
+  width: 130px;
+  height: 45px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Cores dos botões com a paleta minimalista */
+.inicio {
+  background-color: var(--color-primary);
+}
+
+.pause {
+  background-color: var(--color-secondary);
+}
+
+.restart {
+  background-color: #1a1a1a;
+}
+
+.restart:hover {
+  background-color: var(--color-text-light);
+}
